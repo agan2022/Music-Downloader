@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Downloader</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <section class="left-section">
+
+        <div class="nav-control">
+            <span>
+                <img src="img/icon/Home.svg">
+                <a href="#">Home</a>
+            </span>
+            <span>
+                <img src="img/icon/Search.svg">
+                <a href="#">Search</a>
+            </span>
+            <span>
+                <img style="margin-left:7px" src="img/icon/upload-cloud.svg">
+                <input type="file" id="upl" oninput="uploadMusic(this)">
+            </span>
+        </div>
+
+        <ul class="singers-list" id="singers-list"></ul>
+
+    </section>
+
+    <section class="right-section">
+        <h2 class=" title">Made For You</h2>
+        <div class="musics-collection" id="musics-collection">
+        </div>
+    </section>
+
+    <script src="/js/render-components.js"></script>
+
+</body>
+
+</html>

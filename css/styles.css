@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Inter";
+    src: url('../fonts/Inter-SemiBold.ttf');
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+}
+
+*{
+    font-family: "Inter"
+}
+
+a , p {
+    color: white;
+    text-decoration: none;
+}
+
+button { 
+    cursor: pointer;
+}
+
+.left-section {
+    width: 25%;
+    margin-right: 10px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.singers-list,
+.nav-control {
+    background-color: #121212;
+    border-radius: 9px;
+    padding: 6px;
+}
+
+/* singers list style */
+.singers-list {
+    height: 100%;
+}
+
+.singers-list > li { 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    padding: 8px
+}
+
+.singers-list > li > div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.singers-list > li > img {
+    border-radius: 8px;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 18px
+}
+
+/* nav control style */
+.nav-control {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.nav-control > span {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: start;
+    align-items: center
+}
+
+.nav-control > span > img {
+    margin-right: 20px
+}
+
+.main-text {
+    font-weight: 700;
+    margin: 0
+}
+
+.sub-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* right section */
+
+.right-section {
+    /* background: linear-gradient(to top, #121212, #585858); */
+    height: 100%;
+    width: 74%;
+    padding: 12px
+}
+
+.title {
+    font-weight: 1100;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: #fff
+}
+
+.musics-collection {
+    width: 100%;
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: between;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    width: 16rem;
+    height: 18rem;
+    background-color: #121212;
+    text-align: left;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 10px;
+    margin: 16px;
+}
+
+.music-card > img {
+    height: 60%;
+    width: 100%;
+    margin-bottom: 13px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 10px;
+}
+
+.music-card > button {
+    background-color: rgb(40, 187, 40);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    margin-top: 21px;
+    margin-left: 7px;
+}
+
+.music-card > button > img {
+    margin-left: 16px;
+}
